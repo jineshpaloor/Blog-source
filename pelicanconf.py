@@ -5,10 +5,11 @@ AUTHOR = u'Jinesh'
 SITENAME = u"Jinesh's Blog"
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Asia/Kolkata'
 
 DEFAULT_LANG = u'en'
 
+THEME = 'naiq'
 # Blogroll
 LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
           ('Python.org', 'http://python.org'),

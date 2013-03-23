@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+  <section class="article">
+    <h1 class="articleTitle">{{ article.title }}</h1>
+    <div class="postInfo">
+      Written on <span class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</span>
+    </div>
+    <div class="articleContent">
+      {{ article.content }}
+    </div>
+  </section>
+  <div class="articleEnd">---</div>
+  {% if not DEBUG %}{% include "_disqus.html" %}{% endif %}
+{% endblock %}
